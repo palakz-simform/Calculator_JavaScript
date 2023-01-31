@@ -13,31 +13,31 @@
     <title>Calculator</title>
 </head>
 <body>
+
     <div class="container">
         <div class="container1">
-            <div class="row">
+       
+           <div class="actions">
+          <div class="row">
                 <div class="col-4">
-                    <input type="text" id="uinput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    <input type="text"  id="input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                 </div>
                </div>
-               <div class="rowans">
-                <div class="col-4 ans">
-                    <input type="text"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                </div>
-               </div>
-               <div class="row">
+              
+             <div class="row">
                     <div class="col">
-                        <button type="button" class="btn" onclick='getElementById("uinput").innerHTML=deg()'>DEG</button>
-                        <button type="button" class="btn" onclick='getElementById("uinput").innerHTML=fe()'>F-E</button>                        
+                        <button type="button" class="btn" >DEG</button>
+                        <button type="button" class="btn" >F-E</button>                        
                     </div>
                 </div>
+                
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="btn" onclick='getElementById("uinput").innerHTML=mc()'>MC</button>
-                        <button type="button" class="btn" onclick='getElementById("uinput").innerHTML=mr()'>MR</button>
-                        <button type="button" class="btn" onclick='getElementById("uinput").innerHTML=mp()'>M+</button>
-                        <button type="button" class="btn" onclick='getElementById("uinput").innerHTML=mm()'>M-</button>
-                        <button type="button" class="btn" onclick='getElementById("uinput").innerHTML=ms()'>MS</button>
+                        <button type="button" class="btn" >MC</button>
+                        <button type="button" class="btn" >MR</button>
+                        <button type="button" class="btn" >M+</button>
+                        <button type="button" class="btn" >M-</button>
+                        <button type="button" class="btn" >MS</button>
                     </div>
                 </div>
                 <div class="row">
@@ -68,68 +68,68 @@
                 <div class="row">
                     <div class="col col-bg">
                         <button type="button" class="btn ">2<sup>nd</sup></button>
-                        <button type="button" class="btn">&pi;</button>
-                        <button type="button" class="btn">e</button>
-                        <button type="button" class="btn">C</button>
-                        <button type="button" class="btn" onclick='getElementById("uinput").innerHTML=bsp()'><i class="fa-solid fa-delete-left"></i></button>
+                        <button type="button" class="btn" value="pi">&pi;</button>
+                        <button type="button" class="btn" value="e">e</button>
+                        <button type="button" class="btn" value="ce" >C</button>
+                        <button type="button" class="btn" value="clear"><i class="fa-solid fa-delete-left"></i></button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-bg">
-                        <button type="button" class="btn ">x<sup>2</sup></button>
-                        <button type="button" class="btn">1/x</button>
-                        <button type="button" class="btn">|x|</button>
-                        <button type="button" class="btn">exp</button>
-                        <button type="button" class="btn">mod</button>
+                        <button type="button" class="btn" value="square">x<sup>2</sup></button>
+                        <button type="button" class="btn" value="1/x">1/x</button>
+                        <button type="button" class="btn" value="|x|">|x|</button>
+                        <button type="button" class="btn" value="exp">exp</button>
+                        <button type="button" class="btn" value="%">mod</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-bg">
-                        <button type="button" class="btn "><sup>2</sup><em>&#8730;</em><span> y</span></button>
-                        <button type="button" class="btn">(</button>
-                        <button type="button" class="btn">)</button>
-                        <button type="button" class="btn">n!</button>
-                        <button type="button" class="btn">/</button>
+                        <button type="button" class="btn" value="sqrt"><sup>2</sup><em>&#8730;</em><span> y</span></button>
+                        <button type="button" class="btn" value="(">(</button>
+                        <button type="button" class="btn" value=")">)</button>
+                        <button type="button" class="btn" value="factorial">n!</button>
+                        <button type="button" class="btn" value="/"><i class="fa-solid fa-divide"></i></button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-bg">
-                        <button type="button" class="btn ">x<sup>y</sup></button>
-                        <button type="button" class="btn bold" >7</button>
-                        <button type="button" class="btn bold">8</button>
-                        <button type="button" class="btn bold">9</button>                       
-                        <button type="button" class="btn">*</button>
+                        <button type="button" class="btn" value="**">x<sup>y</sup></button>
+                        <button type="button" class="btn bold" value="7" >7</button>
+                        <button type="button" class="btn bold" value="8">8</button>
+                        <button type="button" class="btn bold" value="9">9</button>                       
+                        <button type="button" class="btn" value="*">x</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-bg">
-                        <button type="button" class="btn ">10<sup>x</sup></button>
-                        <button type="button" class="btn bold">4</button>
-                        <button type="button" class="btn bold">5</button>
-                        <button type="button" class="btn bold">6</button>
-                        <button type="button" class="btn">-</button>
+                        <button type="button" class="btn" value="10power">10<sup>x</sup></button>
+                        <button type="button" class="btn bold" value="4">4</button>
+                        <button type="button" class="btn bold" value="5">5</button>
+                        <button type="button" class="btn bold" value="6">6</button>
+                        <button type="button" class="btn" value="-">-</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-bg">
-                        <button type="button" class="btn ">log</button>
-                        <button type="button" class="btn bold">1</button>
-                        <button type="button" class="btn bold">2</button>
-                        <button type="button" class="btn bold">3</button>
-                        <button type="button" class="btn">+</button>
+                        <button type="button" class="btn" value="log">log</button>
+                        <button type="button" class="btn bold" value="1">1</button>
+                        <button type="button" class="btn bold" value="2">2</button>
+                        <button type="button" class="btn bold" value="3">3</button>
+                        <button type="button" class="btn" value="+">+</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-bg">
                         <button type="button" class="btn ">ln</button>
                         <button type="button" class="btn"><sup>+</sup>/<sub>-</sub></button>
-                        <button type="button" class="btn bold">0</button>
-                        <button type="button" class="btn">.</button>
-                        <button type="button" class="btn blue">=</button>
+                        <button type="button" class="btn bold" value="0">0</button>
+                        <button type="button" class="btn" value=".">.</button>
+                        <button type="button" class="btn blue" value="=">=</button>
                     </div>
                 </div>
 
-
+            </div> <!--actions-->
                
         </div>
       
@@ -139,11 +139,10 @@
 
 
 
+<script src="script.js"></script>
 
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

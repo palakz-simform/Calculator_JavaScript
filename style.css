@@ -18,7 +18,7 @@ body{
 .col-4 input{
     width: 349px;
     height:55px;
-    font-size:20px;
+    font-size:30px;
     background-color: #E5E4E2;
     text-align: right;
     border-radius: 0px;
@@ -28,16 +28,7 @@ body{
    
 }
 
-.ans input{
-    width: 349px;
-    height:60px;
-    font-size: 40px;
-    background-color: #E5E4E2;
-    text-align: right;
-    border-radius: 0px;
-    border: none;
-    outline:none;
-}
+
 .col button{
     background-color: #E5E4E2;
     color:black;
