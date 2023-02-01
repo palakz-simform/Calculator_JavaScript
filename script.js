@@ -9,9 +9,50 @@ const value = e.target.value||e.target.parentElement.value;
 
 if(value !== undefined) {
 			switch(value){
+				case "DEG":
+				case "RAD":
+					degrad();
+					break;
+				case "mc":
+					memory=0
+					break;
+
+				case "ms":
+					memory = expression;
+					expression=""
+					break;
+
+				case "m+":
+					memory = memory+expression;
+					expression=""
+					break;
+				
+				case "m-":
+					memory = memory-expression;
+					expression=""
+					break;
+
+				case "mr":
+					let finalans = expression+memory; 
+					expression = eval(finalans);
+					break;
+
+				case "log2":
+					expression = Math.log2(expression)
+					break;
+
+				case "rnd":
+					expression = Math.rnd(expression)
+					break;
+
+				case "log1p":
+					expression = Math.log1p(expression)
+					break;
+
 				case "pi":
 					expression=Math.PI*expression;
 					break;
+
 				case "ce":
 			        expression = '';
 					ans.value = 0;
@@ -67,12 +108,51 @@ if(value !== undefined) {
 					expression = 10**expression;
 					break;
 
-				case "log":
+				case "ln":
 					expression = Math.log(expression)
 					break;
-					
+				
+				case "log10":
+					expression = Math.log10(expression)
+					break;
+
+				case "sin":
+					expression = Math.sin(expression);
+					break;
+
+				case "cos":
+					expression = Math.cos(expression);
+					break;
+
+				case "tan":
+					expression = Math.tan(expression);
+					break;
+
+				case "+/-":
+					if(expression>0){
+						expression = expression*(-1)
+					}
+					else{
+						expression = Math.abs(expression)
+					}
+					break;
+
 				default:
 					expression += value;
+			}
+
+			function degrad(){
+				var t = document.getElementById("rd");
+				
+				if(t.value==="DEG"){
+					expression = expression * (180/Math.PI)
+					t.value="RAD"
+				}
+				else{
+					expression = expression * (Math.PI/180)
+					t.value="DEG"
+				}
+
 			}
 
 			if(expression == undefined) {
@@ -81,48 +161,7 @@ if(value !== undefined) {
 			} else {
 				ans.value = expression;
 			}
-			// I'm good to go.
-			/*
-			else if(value == 'x^2'){
-				expression =square();
-			}
-			else if(value == 'radic'){
-				expression = Math.sqrt(expression);
-			}
-			else if(value == 'log'){
-				expression = Math.log(expression);
-			}
-			else if(value == 'sin'){
-				expression = Math.sin(expression);
-			}
-			else if(value == 'cos'){
-				expression = Math.cos(expression);
-			}
-			else if(value == 'tan'){
-				expression = Math.tan(expression);
-			}
-
-			else if(value == '=') {
-				const answer = eval(expression);
-				expression = answer;
-				
-			}
-            else if(value == 'clear'){
-                let exp = expression
-                if(exp.length>0){
-                    exp = exp.substring(0,exp.length-1);
-                    expression = exp;
-
-                }
-            }
-             else {
-				expression += value;
-			}*/
-
-			
-			
-
-
+	
 		}
 
 	});

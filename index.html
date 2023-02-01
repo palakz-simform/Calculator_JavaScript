@@ -20,24 +20,24 @@
            <div class="actions">
           <div class="row">
                 <div class="col-4">
-                    <input type="text"  id="input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    <input type="text"  id="input">
                 </div>
                </div>
               
              <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn" >DEG</button>
+                    <div class="col inputbtn">
+                        <input type="button" class="btn" id="rd" value="DEG"/>
                         <button type="button" class="btn" >F-E</button>                        
                     </div>
                 </div>
                 
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="btn" >MC</button>
-                        <button type="button" class="btn" >MR</button>
-                        <button type="button" class="btn" >M+</button>
-                        <button type="button" class="btn" >M-</button>
-                        <button type="button" class="btn" >MS</button>
+                        <button type="button" class="btn" value="mc" >MC</button>
+                        <button type="button" class="btn" value="mr" >MR</button>
+                        <button type="button" class="btn" value="m+">M+</button>
+                        <button type="button" class="btn" value="m-">M-</button>
+                        <button type="button" class="btn" value="ms">MS</button>
                     </div>
                 </div>
                 <div class="row">
@@ -46,10 +46,11 @@
                             <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Trigonometry
                             </button>
+                            
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item"  href="#">&emsp;&emsp;&emsp;sin</a></li>
-                              <li><a class="dropdown-item" href="#">&emsp;&emsp;&emsp;cos</a></li>
-                              <li><a class="dropdown-item" href="#">&emsp;&emsp;&emsp;tan</a></li>
+                              <li><button class="dropdown-item"  value="sin">&emsp;&emsp;&emsp;sin</button></li>
+                              <li><button class="dropdown-item" value="cos">&emsp;&emsp;&emsp;cos</button></li>
+                              <li><button class="dropdown-item" value="tan">&emsp;&emsp;&emsp;tan</button></li>
                             </ul>
                           </div>
             
@@ -58,9 +59,9 @@
                               Function
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">&emsp;&emsp;&emsp;Function</a></li>
-                              <li><a class="dropdown-item" href="#">&emsp;&emsp;&emsp;Function</a></li>
-                              <li><a class="dropdown-item" href="#">&emsp;&emsp;&emsp;Function</a></li>
+                              <li><button class="dropdown-item" value="log2">&emsp;&emsp;&emsp;log2</button></li>
+                              <li><button class="dropdown-item" value="rnd">&emsp;&emsp;&emsp;RND</button></li>
+                              <li><button class="dropdown-item" value="log1p">&emsp;&emsp;&emsp;log1p</button></li>  <!-- Math.log1p() method returns the natural logarithm (base E) of 1 + a numbe-->
                             </ul>
                           </div>
                     </div>
@@ -112,7 +113,7 @@
                 </div>
                 <div class="row">
                     <div class="col col-bg">
-                        <button type="button" class="btn" value="log">log</button>
+                        <button type="button" class="btn" value="log10">log</button>
                         <button type="button" class="btn bold" value="1">1</button>
                         <button type="button" class="btn bold" value="2">2</button>
                         <button type="button" class="btn bold" value="3">3</button>
@@ -121,8 +122,8 @@
                 </div>
                 <div class="row">
                     <div class="col col-bg">
-                        <button type="button" class="btn ">ln</button>
-                        <button type="button" class="btn"><sup>+</sup>/<sub>-</sub></button>
+                        <button type="button" class="btn " value="ln">ln</button>
+                        <button type="button" class="btn" value="+/-"><sup>+</sup>/<sub>-</sub></button>
                         <button type="button" class="btn bold" value="0">0</button>
                         <button type="button" class="btn" value=".">.</button>
                         <button type="button" class="btn blue" value="=">=</button>

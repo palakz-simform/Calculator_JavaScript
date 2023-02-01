@@ -27,8 +27,6 @@ body{
     padding:15px
    
 }
-
-
 .col button{
     background-color: #E5E4E2;
     color:black;
@@ -43,13 +41,24 @@ body{
     background-color: #D3D3D3;
     color:black
 }
-.dropdown{
-    width:130px;
+.inputbtn input{
+    
+    border: none;
+    width: 70px;
 }
 .dropdown button{
     width: 130px;;
 }
 
+
+.dropdown-menu button{
+    background-color: white;
+    width:130px;
+}
+.dropdown-menu button:hover{
+    background-color: white;
+    
+}
 .col-bg button{
     background-color:#F0F0F0;
     margin:2px;
