@@ -2,7 +2,6 @@ const actions = document.querySelector(".actions");
 const ans = document.getElementById("input");
 let expression = "";
 actions.addEventListener("click", (e) => {
-  console.log(e.target);
   const value = e.target.value || e.target.parentElement.value;
 
   if (value !== undefined) {

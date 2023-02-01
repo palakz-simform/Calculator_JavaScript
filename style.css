@@ -58,6 +58,11 @@ body {
 .dropm2 button {
   width: 55px;
 }
+
+
+button.dropdown-item.dropm{
+  background-color: white;
+}
 .dropcolor {
   background-color: white;
 }
