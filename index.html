@@ -17,24 +17,24 @@
     <div class="container">
         <div class="container1">
        
-           <div class="actions">
+        
           <div class="row">
                 <div class="col-4">
-                    <input type="text"  id="input">
+                    <input type="text" id="input" disabled>
                 </div>
                </div>
-              
+               <div class="actions">
              <div class="row">
                     <div class="col inputbtn">
                         <input type="button" class="btn" id="rd" value="DEG"/>
-                        <button type="button" class="btn" >F-E</button>                        
+                        <button type="button" class="btn" value="fe">F-E</button>                        
                     </div>
                 </div>
                 
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="btn" value="mc" >MC</button>
-                        <button type="button" class="btn" value="mr" >MR</button>
+                        <button type="button" class="btn" value="mc" id="mc" disabled>MC</button>
+                        <button type="button" class="btn" value="mr" id="mr" disabled>MR</button>
                         <button type="button" class="btn" value="m+">M+</button>
                         <button type="button" class="btn" value="m-">M-</button>
                         <button type="button" class="btn" value="ms">MS</button>
@@ -44,7 +44,7 @@
                     <div class="col">
                         <div class="dropdown">
                             <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Trigonometry
+                                <img src="https://img.icons8.com/glyph-neue/14/null/trigonometry.png"/> Trigonometry
                             </button>
                             
                             <ul class="dropdown-menu">
@@ -56,7 +56,7 @@
             
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Function
+                                <img src="https://img.icons8.com/ios-filled/14/null/frequency-f.png"/>&nbsp;Function
                             </button>
                             <ul class="dropdown-menu">
                               <li><button class="dropdown-item" value="log2">&emsp;&emsp;&emsp;log2</button></li>
@@ -68,7 +68,23 @@
                 </div>
                 <div class="row">
                     <div class="col col-bg">
-                        <button type="button" class="btn ">2<sup>nd</sup></button>
+                        
+                       
+                        <div class="dropdown dropm2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                2<sup>nd</sup>
+                            </button>
+                                 <ul class="dropdown-menu" >
+                                  
+                                    <li><button class="dropdown-item " style="background-color: white;" value="2^n">&emsp;&emsp;&emsp;2<sup>n</sup></button></li>
+                                    <li><button class="dropdown-item " style="background-color: white;" value="3^n">&emsp;&emsp;&emsp;3<sup>n</sup></button></li>
+                                    <li><button class="dropdown-item " style="background-color: white;" value="n^3">&emsp;&emsp;&emsp;n<sup>3</sup></button></li>
+                                    <li><button class="dropdown-item " style="background-color: white;" value="3root">&emsp;&emsp;&emsp;<sup>3</sup><em>&#8730;</em><span> y</span></button></li>
+                                  </ul>
+                          
+                           
+                          </div>
+
                         <button type="button" class="btn" value="pi">&pi;</button>
                         <button type="button" class="btn" value="e">e</button>
                         <button type="button" class="btn" value="ce" >C</button>

@@ -5,7 +5,7 @@ body{
 }
 
 .container1{
-    width: 350px;
+    width: 300px;
     align-content: center;
     margin:auto;
     background-color: #E5E4E2;
@@ -16,7 +16,7 @@ body{
     display: flex;;
 }
 .col-4 input{
-    width: 349px;
+    width: 300px;
     height:55px;
     font-size:30px;
     background-color: #E5E4E2;
@@ -24,7 +24,8 @@ body{
     border-radius: 0px;
     border: none;
     outline:none;
-    padding:15px
+    padding:15px;
+    color:black;
    
 }
 .col button{
@@ -58,6 +59,14 @@ body{
 .dropdown-menu button:hover{
     background-color: white;
     
+}
+
+.dropm2 button{
+    width:55px;
+    
+}
+.dropcolor{
+    background-color: white;
 }
 .col-bg button{
     background-color:#F0F0F0;
