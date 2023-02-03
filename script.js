@@ -153,8 +153,17 @@ actions.addEventListener("click", (e) => {
           if (expression.includes("√")) {
             squareroot();
           }
-          const answer = eval(expression);
+          else if(expression.includes("log")){
+            logten();
+          }
+          else if(expression.includes("ln")){
+            ln();
+          }
+         else{
+            const answer = eval(expression);
           expression = answer;
+          }
+          
         } catch {
           expression = "Syntax Error";
         }
@@ -162,21 +171,18 @@ actions.addEventListener("click", (e) => {
         break;
 
       case "10power":
-        expression = 10 ** expression;
-        forNaN(expression);
+        expression="10**"
         break;
 
       case "ln":
-        expression = Math.log(expression);
-        forNaN(expression);
+        expression = "ln"
+       
         break;
 
       case "log10":
-        expression = Math.log10(expression);
-        forNaN(expression);
-
+        expression = "log";
         break;
-
+   
       case "sin":
         expression = Math.sin(expression);
         forNaN(expression);
@@ -218,6 +224,16 @@ actions.addEventListener("click", (e) => {
           .toString()
           .substring(1, expression.toString().length);
       }
+    }
+
+    function logten(){
+      let e = expression.substring(3, expression.length);
+      expression = Math.log10(e);
+    }
+
+    function ln(){
+      let e = expression.substring(2, expression.length);
+      expression = Math.log(e);
     }
 
     function squareroot() {
